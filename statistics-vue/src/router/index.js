@@ -17,7 +17,14 @@ const routes = [
   },
   {
     path: '/login',
+    name: 'Login',
     component: () => import('@/views/login/index'),
+    hidden: true
+  },
+  {
+    path: '/tablelist',
+	name: 'tablelist',
+    component: () => import('@/views/table/index'),
     hidden: true
   }
 ]
