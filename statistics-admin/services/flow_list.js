@@ -12,17 +12,23 @@ function findFlowList() {
     return querySql(`select * from flow_list`)
 }
 
+function insertCity(province, city) {
+    let arr = []
+    return querySql(`insert into city_list(id, province, city) values(null, '省份', '城市')`)
+}
+
 module.exports = {
     login,
     findUser,
-    findFlowList
+    findFlowList,
+    insertCity
 }
 
 
-// CREATE TABLE `flow_list` (
+// CREATE TABLE `city_list` (
 //     `Id` int(11) NOT NULL AUTO_INCREMENT,  
 //     `province` varchar(18) NOT NULL unique,
-//     `area` varchar(18) NOT NULL,
+//     `city` varchar(18) NOT NULL unique,
 //     `taday_pv` int(18) NOT NULL,
 //     `taday_uv` int(18) NOT NULL,
 //     `taday_ip` int(18) NOT NULL,

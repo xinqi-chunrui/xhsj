@@ -26,6 +26,12 @@ const routes = [
 	name: 'tablelist',
     component: () => import('@/views/table/index'),
     hidden: true
+  },
+  {
+    path: '/tablelists',
+	name: 'tablelists',
+    component: () => import('@/views/table/table_list.vue'),
+    hidden: true
   }
 ]
 

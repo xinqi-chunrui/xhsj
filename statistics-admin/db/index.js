@@ -52,3 +52,23 @@ module.exports = {
   querySql,
   queryOne
 }
+
+// CREATE TABLE `sem_list` (
+//     `Id` int(11) NOT NULL AUTO_INCREMENT,  
+//     `cityid` int(11) NOT NULL unique,
+//     `over_all_cost` int(11) NOT NULL unique,
+//     `cost_baidu` int(18) NOT NULL,
+//     `cost_360` int(18) NOT NULL,
+//     `cost_sogo` int(18) NOT NULL,
+//     `cost_uc` int(18) NOT NULL,
+//     `cost_jr` int(18) NOT NULL,
+//     `cost_xxl` int(18) NOT NULL,
+//     `phone_count` int(18) NOT NULL,
+//     `meituan` int(18) NOT NULL,
+//     `phone_cost` int(18) NOT NULL,
+//     `sign_bill_count` int(18) NOT NULL,
+//     `sign_bill_sum` int(18) NOT NULL,
+//     `year` int(3) NOT NULL unique,
+//     `month` int(3) NOT NULL unique,
+// PRIMARY KEY (`Id`)
+// ) ENGINE=InnoDB AUTO_INCREMENT=1018 DEFAULT CHARSET=utf8;
