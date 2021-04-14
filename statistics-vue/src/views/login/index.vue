@@ -7,11 +7,13 @@
       label-width="100px"
       class="demo-ruleForm"
     >
-      <el-form-item label="用户名：" prop="name">
-        <el-input v-model="ruleForm.name"></el-input>
+      <el-form-item class="style-name" label="" prop="name">
+        <i class="el-icon-s-custom"></i>
+        <el-input class="el-input" v-model="ruleForm.name"></el-input>
       </el-form-item>
-      <el-form-item label="密 码：" prop="password">
-        <el-input type="password" v-model="ruleForm.password"></el-input>
+      <el-form-item class="style-name" label="" prop="password">
+        <i class="el-icon-key"></i>
+        <el-input class="el-input" type="password" v-model="ruleForm.password"></el-input>
       </el-form-item>
       <el-form-item>
         <el-button class="submit-button" type="primary" @click="submitForm('ruleForm')">登录</el-button>
@@ -67,5 +69,28 @@ export default {
 }
 .submit-button{
   width: 100%;
+}
+
+.style-name {
+  position: relative;
+}
+
+.style-name i{
+  position: absolute;
+  left: 5px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  line-height: 40px;
+  font-size: 20px;
+  z-index: 22;
+}
+
+.style-name .el-input input{
+  padding-left: 32px;
+}
+
+.style-name .el-form-item__content {
+  margin-left: 0;
 }
 </style>
